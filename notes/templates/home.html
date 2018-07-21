@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="entire_thing">
+  <div class="video">
+  <iframe width="400" height="300" src="https://www.youtube.com/embed/ZIuXdAOhiEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="notes">
+    <h3> Student Notes </h3>
+    <form action="/" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit" value="Submit" />
+    </form>
+    {% for note in notes %}
+      <div class="notes">
+        <p>{{ note.note }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="clear"></div>
+</div>
+{% endblock %}

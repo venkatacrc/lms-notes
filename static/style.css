@@ -1,0 +1,12 @@
+.video {
+  float: left;
+}
+
+.notes {
+  float: right;
+  margin-left: 10px;
+}
+
+.entire-thing {
+  width: 650px;
+}

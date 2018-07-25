@@ -2,7 +2,8 @@
 {% block content %}
 <div class="entire_thing">
   <div class="video">
-  <iframe width="400" height="300" src="https://www.youtube.com/embed/ZIuXdAOhiEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <h3> Lecture Video </h3>
+    <iframe width="650" height="400" src="https://www.youtube.com/embed/ZIuXdAOhiEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
   <div class="notes">
     <h3> Student Notes </h3>
@@ -11,11 +12,13 @@
       {{ form }}
       <input type="submit" value="Submit" />
     </form>
+    <div class="note_frame" style="  border:1px solid #000000;height: 250px; overflow-y: scroll;">
     {% for note in notes %}
-      <div class="notes">
+      <div class="note" >
         <p>{{ note.note }}</p>
       </div>
     {% endfor %}
+    </div>
   </div>
   <div class="clear"></div>
 </div>

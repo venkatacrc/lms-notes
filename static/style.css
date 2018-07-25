@@ -3,10 +3,17 @@
 }
 
 .notes {
-  float: right;
-  margin-left: 10px;
+  width: 150px;
+  word-wrap: break-word;
+}
+
+.note_frame {
+  border:1px solid #000000;
+  height: 40px;
+  width: 150px;
+  overflow-y: scroll;
 }
 
 .entire-thing {
-  width: 650px;
+  width: 600px;
 }

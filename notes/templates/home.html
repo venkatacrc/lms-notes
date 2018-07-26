@@ -1,22 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="entire_thing">
-  <div class="video">
+  <div class="video" >
     <h3> Lecture Video </h3>
-    <iframe width="650" height="400" src="https://www.youtube.com/embed/ZIuXdAOhiEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="550" height="350" src="https://www.youtube.com/embed/ZIuXdAOhiEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
-  <div class="notes">
+  <div class="notes" style="float: right; width: 40%">
     <h3> Student Notes </h3>
     <form action="/" method="post">
       {% csrf_token %}
       {{ form }}
       <input type="submit" value="Submit" />
     </form>
-    <div class="note_frame" style="  border:1px solid #000000;height: 250px; overflow-y: scroll;">
+    <div class="note_frame" style="border:1px solid gray; width: 50%; height: 250px; overflow-y: scroll;">
     {% for note in notes %}
-      <div class="note" >
+      <!-- <div class="note" > -->
         <p>{{ note.note }}</p>
-      </div>
+      <!-- </div> -->
     {% endfor %}
     </div>
   </div>

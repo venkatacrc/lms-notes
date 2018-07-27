@@ -25,7 +25,16 @@ Quit the server with CONTROL-C
 ```
 Open the URL to see the lightweight Learning Management System with Student Notes interface prototype.
 
-## Credits
+## Authors
+
+* **Venkata C Chintapalli** - *Initial work* - [PurpleBooth](https://github.com/venkatacrc)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgements
+
 JCrop GitHub URL:
 https://github.com/tapmodo/Jcrop
 Django URL

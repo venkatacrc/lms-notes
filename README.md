@@ -1,4 +1,4 @@
-# Learning Management Systems with Student Notes interface
+# Learning Management System with Student Notes interface
 
 This is a prototype created to show the notes interface to online learning. This is a Django App with Jcrop integrated to take images of the video content.
 

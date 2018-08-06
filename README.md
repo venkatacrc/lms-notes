@@ -7,7 +7,7 @@ This is a prototype created to show the notes interface to online learning. This
 ### Prerequisties
 Install Django
 ```
-pip install django=1.11.14
+pip install django==1.11.14
 ```
 
 ### Run the application
